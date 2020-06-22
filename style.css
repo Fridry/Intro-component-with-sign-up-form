@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  padding: 60px 140px;
+  display: flex;
+  background: hsl(0, 100%, 74%) url("images/bg-intro-desktop.png") center
+    no-repeat;
+}
+
+.left-box {
+  color: #fff;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-right: 40px;
+}
+
+.left-box .left-box-title {
+  font-size: 46px;
+}
+
+.right-box {
+  width: 45%;
+}
+
+.content-title {
+  width: 100%;
+  height: 50px;
+  background-color: hsl(248, 32%, 49%);
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0px 5px rgba(62, 60, 73, 0.18);
+}
+
+.content-title .right-box-topText {
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+}
+
+.content-title .right-box-topText span {
+  font-weight: 600;
+}
+
+.form-box {
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  margin-top: 25px;
+  box-shadow: 0px 5px rgba(62, 60, 73, 0.18);
+}
+
+.form-box form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.form-box input {
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  border: 1px solid hsl(246, 25%, 77%);
+  outline: none;
+  padding: 22px 20px;
+  color: hsl(249, 10%, 26%);
+  font-weight: 600;
+}
+
+.form-box input::placeholder {
+  color: hsl(246, 25%, 77%);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.form-box input:focus {
+  border: 1px solid hsl(249, 10%, 26%);
+}
+
+.form-box button {
+  background-color: hsl(154, 59%, 51%);
+  border-radius: 8px;
+  height: 50px;
+  border: 1px solid hsl(154, 59%, 48%);
+  color: #fff;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  box-shadow: 0px 5px hsl(154, 59%, 48%);
+  cursor: pointer;
+  transition: 650ms ease;
+  letter-spacing: 1px;
+}
+
+.right-box-bottomText {
+  margin-top: 20px;
+  color: hsl(246, 25%, 77%);
+  font-size: 12px;
+  text-align: center;
+}
+
+.form-box button:focus {
+  background-color: rgba(56, 204, 140, 0.8);
+  box-shadow: none;
+}
+
+.right-box-bottomText span {
+  color: hsl(0, 100%, 74%);
+  font-weight: 600;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.input-group img {
+  opacity: 0;
+  position: absolute;
+  top: 14px;
+  right: 20px;
+}
+
+.input-group small {
+  opacity: 0;
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  text-align: right;
+  color: hsl(0, 100%, 74%);
+  font-size: 12px;
+}
+
+.input-group .active {
+  opacity: 1;
+}
+
+.input-group .error {
+  border: 2px solid hsl(0, 100%, 74%);
+}
+
+.input-group .error::placeholder {
+  color: hsl(0, 100%, 74%);
+}
+
+.input-group .imgError {
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: hsl(0, 100%, 74%) url("images/bg-intro-mobile.png") center
+      no-repeat;
+  }
+
+  .left-box,
+  .right-box {
+    width: 100%;
+  }
+
+  .left-box {
+    text-align: center;
+    margin-bottom: 25px;
+
+    align-items: center;
+    justify-content: center;
+    padding-right: 0;
+  }
+
+  .left-box .left-box-title {
+    font-size: 32px;
+    padding: 10px;
+  }
+
+  .right-box .right-box-topText {
+    font-size: 16px;
+  }
+}
